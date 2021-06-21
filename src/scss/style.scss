@@ -40,7 +40,7 @@
     color: #fff;
     font-size: 12px;
     &-green {
-      background-color: $green-btn;
+      background-color: $green;
     }
     &-red {
       background-color: $red;
@@ -63,5 +63,58 @@
     font-size: 14px;
     line-height: 30px;
     color: #fff;
+  }
+}
+
+.search {
+  padding: 140px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  line-height: 30px;
+  min-height: 532px;
+  &__inner {
+    text-align: center;
+    &-title {
+      padding: 5px 0;
+      font-family: "Roboto-Bold";
+      font-size: 48px;
+    }
+    &-text {
+      font-family: "Roboto-Medium";
+      font-size: 20px;
+    }
+
+    &-form {
+      input {
+        position: relative;
+        min-width: 670px;
+        height: 56px;
+        background-color: #fff;
+        box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+        border-radius: 4px;
+        border: none;
+        padding: 0 60px 0 25px;
+        &::placeholder {
+          font-family: "Roboto-Medium";
+          letter-spacing: 0.05em;
+          line-height: 56px;
+          font-size: 14px;
+          color: $gray;
+        }
+      }
+      button {
+        border: none;
+        background-color: inherit;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        right: 297px;
+        img {
+          padding-top: 2px;
+        }
+      }
+    }
   }
 }

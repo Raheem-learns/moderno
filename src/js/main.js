@@ -1,3 +1,3 @@
 $(function() {
-  console.log('hello world')
+  let mixer = mixitup('.products__inner-cards');
 });

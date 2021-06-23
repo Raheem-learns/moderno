@@ -65,7 +65,8 @@
     color: #fff;
   }
 }
-
+// -----------------------------------------end header------------------------------------
+// -----------------------------------------start search------------------------------------
 .search {
   padding: 140px 0;
   background-repeat: no-repeat;
@@ -116,5 +117,125 @@
         }
       }
     }
+  }
+}
+//--------------------------------------end search----------------------------------------------
+.products {
+  background-color: $products-bg;
+  padding-top: 120px;
+  &__title {
+    text-align: center;
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    color: $dark;
+  }
+}
+
+.products__inner {
+  &-buttons {
+    text-align: center;
+    padding-top: 60px;
+    font-family: "Roboto-Medium";
+    button {
+      margin-left: 6px;
+      padding: 13px 21px;
+      font-size: 14px;
+      color: $dark;
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+      &.mixitup-control-active {
+        background-color: $red;
+        color: #fff;
+      }
+    }
+  }
+  &-cards {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.cards__item {
+  display: inline-block;
+  background-color: #fff;
+  max-width: 442px;
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  margin-bottom: 30px;
+  &-img {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 32px 17px;
+    font-family: "Roboto-Medium";
+    border-bottom: 1px solid $brd-gray;
+    &-name {
+      max-width: 300px;
+    }
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 32px 21px;
+  }
+  &-author {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    color: $nickname-color;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 13px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &-raiting {
+  }
+}
+
+.item-content__title {
+  display: block;
+  font-family: "Roboto-Medium";
+  color: $dark;
+  font-size: 18px;
+}
+.item-content__prise {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  color: $dark;
+}
+.item-content__category {
+  display: block;
+  padding-top: 11px;
+  font-size: 14px;
+  color: $green;
+}
+
+.products__load-btn {
+  padding-top: 48px;
+  padding-bottom: 110px;
+  text-align: center;
+  button {
+    padding: 20px 30px;
+    color: $dark;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
   }
 }

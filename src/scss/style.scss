@@ -203,7 +203,11 @@
       background-repeat: no-repeat;
     }
   }
-  &-raiting {
+  &-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 105px;
   }
 }
 
@@ -237,5 +241,59 @@
     border: none;
     margin-right: 10px;
     cursor: pointer;
+  }
+}
+
+.products-slider {
+  padding-top: 123px;
+  padding-bottom: 121px;
+  min-width: 442px;
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Roboto-Bold";
+    color: $dark;
+  }
+  &__inner {
+    padding: 55px 15px 0 15px;
+  }
+
+  &__item {
+    width: 442px;
+    border: 1px solid #e3e3e3;
+    .cards__item-content {
+      border: none;
+    }
+  }
+}
+
+.slick {
+  &-slide {
+    margin: 0 15px;
+  }
+  &-list {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  &-dots {
+    padding-top: 67px;
+    display: flex;
+    justify-content: center;
+    & button {
+      border: none;
+      font-size: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-left: 7px;
+      box-shadow: 0px 3px 3px -3px rgba(34, 60, 80, 0.6) inset;
+    }
+  }
+  &-item {
+    max-width: 442px;
+  }
+  &-active button {
+    background-color: $green;
   }
 }

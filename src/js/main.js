@@ -2,7 +2,8 @@ $(function() {
   let mixer = mixitup('.products__inner-cards');
   $(".rate-star").rateYo({
     rating: 5,
-    starWidth: "12px"
+    starWidth: "12px",
+    readOnly: true,
   });
 });
 

@@ -44,6 +44,13 @@ body {
   }
 }
 
-.products__inner-buttons{
+.products__inner-buttons {
   font-size: 0;
+}
+
+.title {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  color: $dark;
+  text-align: center;
 }

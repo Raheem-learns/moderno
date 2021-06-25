@@ -1,6 +1,6 @@
+@import "_fonts";
 @import "_vars";
 @import "_global";
-@import "_fonts";
 
 .header {
   &__top {
@@ -78,8 +78,8 @@
   &__inner {
     text-align: center;
     &-title {
+      color: #fff;
       padding: 5px 0;
-      font-family: "Roboto-Bold";
       font-size: 48px;
     }
     &-text {
@@ -123,12 +123,6 @@
 .products {
   background-color: $products-bg;
   padding-top: 120px;
-  &__title {
-    text-align: center;
-    font-family: "Roboto-Bold";
-    font-size: 36px;
-    color: $dark;
-  }
 }
 
 .products__inner {
@@ -193,6 +187,8 @@
     font-family: "Roboto-Medium";
     font-size: 14px;
     color: $nickname-color;
+    max-width: 245px;
+    flex-wrap: wrap;
     img {
       width: 30px;
       height: 30px;
@@ -208,6 +204,12 @@
     justify-content: space-between;
     align-items: center;
     min-width: 105px;
+    font-size: 12px;
+    color: $text;
+    span {
+      font-size: 12px;
+      color: $dark;
+    }
   }
 }
 
@@ -248,12 +250,6 @@
   padding-top: 123px;
   padding-bottom: 121px;
   min-width: 442px;
-  &__title {
-    text-align: center;
-    font-size: 36px;
-    font-family: "Roboto-Bold";
-    color: $dark;
-  }
   &__inner {
     padding: 55px 15px 0 15px;
   }
@@ -281,6 +277,7 @@
     display: flex;
     justify-content: center;
     & button {
+      cursor: pointer;
       border: none;
       font-size: 0;
       width: 16px;
@@ -296,4 +293,63 @@
   &-active button {
     background-color: $green;
   }
+}
+
+.benefits {
+  background-color: $dark;
+  &__title {
+    color: #fff;
+    padding-top: 124px;
+  }
+  &__inner {
+    padding: 83px 23px 118px 23px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 319px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &:hover {
+      .benefits__item-img {
+        background-color: $green;
+      }
+      .benefits__item-title {
+        color: $green;
+      }
+      svg {
+        fill: #fff;
+        transition: all 0.5s;
+      }
+    }
+    &-img {
+      transition: all 0.5s;
+      width: 113px;
+      height: 113px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 20px;
+    }
+    &-title {
+      transition: all 0.5s;
+      padding-top: 33px;
+      font-size: 24px;
+      color: #fff;
+      font-family: "Roboto-Medium";
+    }
+    &-text {
+      padding-top: 26px;
+      font-size: 15px;
+      color: $text;
+    }
+  }
+}
+
+.heart-icon {
+  padding: 10px 10px;
 }

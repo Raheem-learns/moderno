@@ -388,3 +388,30 @@
     }
   }
 }
+
+.tutorial {
+  padding: 66px 0 120px;
+  &__inner {
+    padding-top: 57px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    background-color: $tut-itemBg;
+    &-images {
+      height: 270px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &-title {
+      text-align: center;
+      padding: 38px 65px;
+      font-size: 24px;
+      font-family: "Roboto-Bold";
+      color: $dark;
+    }
+  }
+}

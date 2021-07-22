@@ -353,3 +353,38 @@
 .heart-icon {
   padding: 10px 10px;
 }
+
+.author {
+  min-height: 760px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    max-width: 650px;
+    min-height: 216px;
+    width: 100%;
+    background-color: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-text {
+      margin-right: 45px;
+      max-width: 260px;
+      color: #fff;
+      line-height: 36px;
+      font-size: 30px;
+      span {
+        font-family: "Roboto-Bold";
+      }
+    }
+    &-link {
+      font-size: 18px;
+      color: $dark;
+      background-color: #fff;
+      padding: 20px 40px;
+    }
+  }
+}
